@@ -1,5 +1,7 @@
 package main;
 
+import java.lang.Math;
+
 public class CalculatorLogic {
     public int convertBaseFourToBaseTen(String base4){
        String radixConversion = Integer.toString(Integer.parseInt(base4, 4), 10);
@@ -29,8 +31,8 @@ public class CalculatorLogic {
         String result = Integer.toString(convertBaseFourToBaseTen(num1) -  convertBaseFourToBaseTen(num2));
         return convertBaseTenToBaseFour(result);
     }
-
-
-
-
+    public int rootOfNumber(String num){
+        String result = Double.toString(Math.sqrt(convertBaseFourToBaseTen(num)));
+        return convertBaseTenToBaseFour(result);
+    }
 }

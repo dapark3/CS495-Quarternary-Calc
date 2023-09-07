@@ -88,6 +88,21 @@ public class CalculatorController {
             case "+":
                 result = calculatorLogic.sumOfNumbers(firstOperand, secondOperand);
                 break;
+            case "-":
+                result = calculatorLogic.minusOfNumbers(firstOperand, secondOperand);
+                break;
+            case "*":
+                result = calculatorLogic.timesOfNumbers(firstOperand, secondOperand);
+                break;
+            case "/":
+                result = calculatorLogic.divisionOfNumbers(firstOperand, secondOperand);
+                break;
+            case "Root":
+                result = calculatorLogic.rootOfNumber(firstOperand);
+                break;
+            default:
+                //How can we tell the calculator the user has entered a wrong input?
+                break;
         }
 
         return String.valueOf(result);
