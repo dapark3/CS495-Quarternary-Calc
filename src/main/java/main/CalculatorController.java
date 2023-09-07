@@ -88,6 +88,15 @@ public class CalculatorController {
             case "+":
                 result = calculatorLogic.sumOfNumbers(firstOperand, secondOperand);
                 break;
+            case "-":
+                result = calculatorLogic.minusOfNumbers(firstOperand, secondOperand);
+                break;
+            case "*":
+                result = calculatorLogic.timesOfNumbers(firstOperand, secondOperand);
+                break;
+            case "/":
+                result = calculatorLogic.divisionOfNumbers(firstOperand, secondOperand);
+                break;
         }
 
         return String.valueOf(result);
