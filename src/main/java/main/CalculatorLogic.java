@@ -1,3 +1,5 @@
+package main;
+
 public class CalculatorLogic {
     private int convertBaseFourToBaseTen(String base4){
        String radixConversion = Integer.toString(Integer.parseInt(base4, 4), 10);

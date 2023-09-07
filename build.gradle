@@ -1,18 +1,24 @@
 plugins {
     id 'java'
     id 'application'
-    id 'org.openjfx.javafxplugin' version '0.0.10'
+    id 'org.openjfx.javafxplugin' version '0.0.12'
 }
 
+group 'main'
 version '1.0-SNAPSHOT'
 javafx {
     version = "17"
-    modules = ['javafx.controls', 'javafx.media']
+    modules = ['javafx.controls', 'javafx.media', 'javafx.fxml']
 }
 
 repositories {
     mavenCentral()
 }
+
+application {
+    applicationDefaultJvmArgs = ['-Dprism.order=sw']
+}
+
 
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
@@ -22,4 +28,6 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+mainClassName = 'main.Main'
 
