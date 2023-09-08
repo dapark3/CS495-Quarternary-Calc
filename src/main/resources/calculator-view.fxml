@@ -43,6 +43,7 @@
             <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" text="=" GridPane.columnIndex="2" GridPane.rowIndex="5" onAction="#handleEquals"/>
             <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="124.0" text="x^2" onAction="#handleUnaryOperation" />
             <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="107.0" text="√ " GridPane.columnIndex="1" onAction="#handleUnaryOperation"/>
+            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="107.0" text="Clear" GridPane.columnIndex="2" GridPane.rowIndex="0" onAction="#resetCalculator"/>
          </children>
       </GridPane>
       <TextField fx:id="full_expression_display" editable="false" layoutX="170.0" layoutY="13.0" prefHeight="54.0" prefWidth="222.0" promptText="expression" />

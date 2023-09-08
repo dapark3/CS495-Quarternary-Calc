@@ -52,6 +52,7 @@ public class CalculatorController {
         full_expression_display.appendText(value);
     }
 
+    @FXML
     private void resetCalculator() {
         firstOperand = "";
         secondOperand = "";
