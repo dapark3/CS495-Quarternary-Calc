@@ -59,6 +59,7 @@ public class CalculatorController {
         current_input_display.clear();
         full_expression_display.clear();
         justEvaluated = false;
+        isDecimalMode = false;
     }
 
     @FXML

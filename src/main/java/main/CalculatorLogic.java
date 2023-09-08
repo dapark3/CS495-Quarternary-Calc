@@ -56,8 +56,8 @@ public class CalculatorLogic {
             Double result = Math.sqrt(Double.parseDouble(num));
             return result.intValue();
         } else{
-            Double num1 = Math.sqrt(convertBaseFourToBaseTen(num));
-            String result = Integer.toString(num1.intValue());
+            Double rootNum = Math.sqrt(convertBaseFourToBaseTen(num));
+            String result = Integer.toString(rootNum.intValue());
             return convertBaseTenToBaseFour(result);
         }
     }
