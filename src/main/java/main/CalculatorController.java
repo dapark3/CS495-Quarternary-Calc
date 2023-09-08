@@ -122,6 +122,9 @@ public class CalculatorController {
             case "Root":
                 result = calculatorLogic.rootOfNumber(firstOperand, isDecimalMode);
                 break;
+            case "^2":
+                result = calculatorLogic.squareOfNumber(firstOperand, isDecimalMode);
+                break;
             default:
                 //How can we tell the calculator the user has entered a wrong input?
                 full_expression_display.appendText("Please enter a valid operation.");
