@@ -100,6 +100,20 @@ public class CalculatorLogicTest {
     }
 
     @Test
+    public void testSquareOfNumberBase4(){
+        assertEquals(10, calculator.squareOfNumber("2", false));
+        assertEquals(100, calculator.squareOfNumber("10", false));
+        assertEquals(121, calculator.squareOfNumber("11", false));
+    }
+
+    @Test
+    public void testSquareOfNumberBase10(){
+        assertEquals(4, calculator.squareOfNumber("2", true));
+        assertEquals(16, calculator.squareOfNumber("4", true));
+        assertEquals(25, calculator.squareOfNumber("5", true));
+    }
+
+    @Test
     public void defaultTest() {
 
     }
