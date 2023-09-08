@@ -63,5 +63,12 @@ public class CalculatorLogic {
     }
     //TODO Implement squared operation
     public int squareOfNumber(String num, boolean isDecimalMode){
+        if(isDecimalMode){
+            Integer result = Integer.parseInt(num) * Integer.parseInt(num);
+            return result;
+        } else {
+            String result = Integer.toString(convertBaseFourToBaseTen(num) *  convertBaseFourToBaseTen(num));
+            return convertBaseTenToBaseFour(result);
+        }
     }
 }
