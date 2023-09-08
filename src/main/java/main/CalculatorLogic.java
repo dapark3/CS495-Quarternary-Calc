@@ -61,4 +61,7 @@ public class CalculatorLogic {
             return convertBaseTenToBaseFour(result);
         }
     }
+    //TODO Implement squared operation
+    public int squareOfNumber(String num, boolean isDecimalMode){
+    }
 }
