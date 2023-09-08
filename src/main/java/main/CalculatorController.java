@@ -18,7 +18,20 @@ public class CalculatorController {
     private String secondOperand = "";
     private String operation = "";
     private boolean justEvaluated = false;
+    private boolean isDecimalMode = false;
 
+    @FXML
+    private ToggleButton decimalToggle;
+
+    @FXML
+    private void toggleDecimalMode(ActionEvent event){
+        isDecimalMode = !isDecimalMode;
+        updateDecimalToggleText();
+    }
+
+    private void updateDecimalToggleText(){
+        decimalToggle.setText(isDecimalMode ? "Decimal": "Integer");
+    }
 
     @FXML
     private void handleNumber(ActionEvent event) {
@@ -27,7 +40,15 @@ public class CalculatorController {
         }
         Button pressedButton = (Button) event.getSource();
         String value = pressedButton.getText();
-        current_input_display.appendText(value);
+
+
+        if(isDecimalMode){
+            current_input_display.appendText(value);
+        } else {
+            if(value.matches("\\d")){
+                current_input_display.appendText(value);
+            }
+        }
         full_expression_display.appendText(value);
     }
 
