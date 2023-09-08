@@ -107,22 +107,23 @@ public class CalculatorController {
         int result = 0;
         switch (operation) {
             case "+":
-                result = calculatorLogic.sumOfNumbers(firstOperand, secondOperand);
+                result = calculatorLogic.sumOfNumbers(firstOperand, secondOperand, isDecimalMode);
                 break;
             case "-":
-                result = calculatorLogic.minusOfNumbers(firstOperand, secondOperand);
+                result = calculatorLogic.minusOfNumbers(firstOperand, secondOperand, isDecimalMode);
                 break;
             case "*":
-                result = calculatorLogic.timesOfNumbers(firstOperand, secondOperand);
+                result = calculatorLogic.timesOfNumbers(firstOperand, secondOperand, isDecimalMode);
                 break;
             case "/":
-                result = calculatorLogic.divisionOfNumbers(firstOperand, secondOperand);
+                result = calculatorLogic.divisionOfNumbers(firstOperand, secondOperand, isDecimalMode);
                 break;
             case "Root":
-                result = calculatorLogic.rootOfNumber(firstOperand);
+                result = calculatorLogic.rootOfNumber(firstOperand, isDecimalMode);
                 break;
             default:
                 //How can we tell the calculator the user has entered a wrong input?
+                full_expression_display.appendText("Please enter a valid operation.");
                 break;
         }
 

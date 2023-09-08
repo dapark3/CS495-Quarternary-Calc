@@ -13,26 +13,51 @@ public class CalculatorLogic {
         return Integer.parseInt(radixConversion);
     }
 
-    public int sumOfNumbers(String num1, String num2){
-        String result = Integer.toString(convertBaseFourToBaseTen(num1) +  convertBaseFourToBaseTen(num2));
-        return convertBaseTenToBaseFour(result);
+    public int sumOfNumbers(String num1, String num2, boolean isDecimalMode){
+        if (isDecimalMode){
+            Integer result = Integer.parseInt(num1) + Integer.parseInt(num2);
+            return result;
+        } else{
+            String result = Integer.toString(convertBaseFourToBaseTen(num1)+convertBaseFourToBaseTen(num2));
+            return convertBaseTenToBaseFour(result);
+        }
     }
 
-    public int timesOfNumbers(String num1, String num2){
-        String result = Integer.toString(convertBaseFourToBaseTen(num1) *  convertBaseFourToBaseTen(num2));
-        return convertBaseTenToBaseFour(result);
+    public int timesOfNumbers(String num1, String num2, boolean isDecimalMode){
+        if(isDecimalMode){
+            Integer result = Integer.parseInt(num1) * Integer.parseInt(num2);
+            return result;
+        } else{
+            String result = Integer.toString(convertBaseFourToBaseTen(num1) *  convertBaseFourToBaseTen(num2));
+            return convertBaseTenToBaseFour(result);
+        }
     }
 
-    public int divisionOfNumbers(String num1, String num2){
-        String result = Integer.toString(convertBaseFourToBaseTen(num1) /  convertBaseFourToBaseTen(num2));
-        return convertBaseTenToBaseFour(result);
+    public int divisionOfNumbers(String num1, String num2, boolean isDecimalMode){
+        if(isDecimalMode){
+            Integer result = Integer.parseInt(num1) / Integer.parseInt(num2);
+            return result;
+        } else {
+            String result = Integer.toString(convertBaseFourToBaseTen(num1) /  convertBaseFourToBaseTen(num2));
+            return convertBaseTenToBaseFour(result);
+        }
     }
-    public int minusOfNumbers(String num1, String num2){
-        String result = Integer.toString(convertBaseFourToBaseTen(num1) -  convertBaseFourToBaseTen(num2));
-        return convertBaseTenToBaseFour(result);
+    public int minusOfNumbers(String num1, String num2, boolean isDecimalMode){
+        if (isDecimalMode){
+            Integer result = Integer.parseInt(num1) - Integer.parseInt(num2);
+            return result;
+        } else{
+            String result = Integer.toString(convertBaseFourToBaseTen(num1) - convertBaseFourToBaseTen(num2));
+            return convertBaseTenToBaseFour(result);
+        }
     }
-    public int rootOfNumber(String num){
-        String result = Double.toString(Math.sqrt(convertBaseFourToBaseTen(num)));
-        return convertBaseTenToBaseFour(result);
+    public int rootOfNumber(String num, boolean isDecimalMode){
+       if (isDecimalMode){
+            Double result = Math.sqrt(Double.parseDouble(num));
+            return result.intValue();
+        } else{
+            String result = Double.toString(Math.sqrt(convertBaseFourToBaseTen(num)));
+            return convertBaseTenToBaseFour(result);
+        }
     }
 }
