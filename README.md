@@ -11,7 +11,7 @@ Made by:
 * Michaela Walker
 
 Task Distributions:
-* Ameco Smith -
+* Ameco Smith - Deciamal Toggle method 
 * Drew Heiss -
 * Julio Orozco -
 * Logan Parker -
