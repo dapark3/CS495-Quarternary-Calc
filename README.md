@@ -6,7 +6,8 @@ Made for BSU CS 495.
 ### How To Use
 Launch the project folder in Intellij 2023.2 edition. Once the files have loaded, click on Gradle in the top left. From there, open application, and double-click run. 
 Get to calculating!!!
-
+![ui](./ui.png)
+![ui-calculation](./ui-calculation.png)
 Made by:
 * Ameco Smith
 * Drew Heiss
