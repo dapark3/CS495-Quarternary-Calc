@@ -3,6 +3,10 @@
 A calculator that performs both quarternary and decimal operations(addition, subtraction, multiplication, division, square root) in base 4.
 Made for BSU CS 495.
 
+### How To Use
+Launch the project folder in Intellij 2023.2 edition. Once the files have loaded, click on Gradle in the top left. From there, open application, and double-click run. 
+Get to calculating!!!
+
 Made by:
 * Ameco Smith
 * Drew Heiss
@@ -11,7 +15,7 @@ Made by:
 * Michaela Walker
 
 Task Distributions:
-* Ameco Smith - Deciamal Toggle method 
+* Ameco Smith - Decimal Toggle method 
 * Drew Heiss - FXML setup, setup the CalculatorController button press logic
 * Julio Orozco - Created the initial functions of calculatorLogic, including the sum, minus, multiplication, division functions, and the base number convertion functions.
 * Logan Parker - Added additional functions to calculatorLogic, calculatorController, and calculatorLogicTest. Reworked calculatorLogic functions to work with both quarternary and decimal. Added clear button to UI.
