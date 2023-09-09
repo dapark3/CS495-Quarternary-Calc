@@ -13,7 +13,7 @@ Made by:
 Task Distributions:
 * Ameco Smith - Deciamal Toggle method 
 * Drew Heiss - FXML setup, setup the CalculatorController button press logic
-* Julio Orozco -
+* Julio Orozco - Created the initial functions of calculatorLogic, including the sum, minus, multiplication, division functions, and the base number convertion functions.
 * Logan Parker - Added additional functions to calculatorLogic, calculatorController, and calculatorLogicTest. Reworked calculatorLogic functions to work with both quarternary and decimal. Added clear button to UI.
 * Michaela Walker - Inital test class along with calling of methods
 
